@@ -10,7 +10,7 @@ app.use(cors());
 app.use(express.json());
 
 // Serve static frontend files from "public" folder
-app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static(path.join(__dirname, "docs")));
 
 /* ---------- MONGODB CONNECTION ---------- */
 const MONGO_URI = "mongodb://127.0.0.1:27017/attendance_app";
