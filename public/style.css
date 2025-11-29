@@ -1,0 +1,201 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    background: #0f172a;
+    color: #e5e7eb;
+    display: flex;
+    justify-content: center;
+    padding: 40px 16px;
+  }
+  
+  .container {
+    max-width: 480px;
+    width: 100%;
+    background: #020617;
+    padding: 24px;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+    border: 1px solid #1f2937;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  
+  .field {
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  
+  input {
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: 1px solid #374151;
+    background: #020617;
+    color: #e5e7eb;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 999px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    background: #22c55e;
+    color: #022c22;
+    margin-top: 8px;
+  }
+  
+  button:hover {
+    opacity: 0.9;
+  }
+  
+  .card {
+    margin-top: 24px;
+    padding: 16px;
+    border-radius: 12px;
+    background: #111827;
+    border: 1px solid #1f2937;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  .subject-card {
+    margin-top: 16px;
+    padding: 16px;
+    border-radius: 14px;
+    background: #020617;
+    border: 1px solid #1f2937;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
+  }
+  
+  .subject-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+  }
+  
+  .subject-header h3 {
+    margin: 0;
+    font-size: 1.05rem;
+  }
+  
+  .badge {
+    font-size: 0.75rem;
+    padding: 3px 8px;
+    border-radius: 999px;
+    border: 1px solid #22c55e55;
+    background: #022c22;
+    color: #bbf7d0;
+  }
+  
+  .current-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 6px 0;
+    font-size: 0.9rem;
+  }
+  
+  .status-pill {
+    font-size: 0.7rem;
+    padding: 2px 8px;
+    border-radius: 999px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  
+  .status-safe {
+    background: #022c22;
+    color: #6ee7b7;
+  }
+  
+  .status-risk {
+    background: #450a0a;
+    color: #fecaca;
+  }
+  
+  .hint-line {
+    font-size: 0.8rem;
+    opacity: 0.8;
+    margin-bottom: 10px;
+  }
+  
+  .counters {
+    display: flex;
+    gap: 16px;
+    margin: 10px 0;
+  }
+  
+  .counter {
+    flex: 1;
+  }
+  
+  .counter-label {
+    font-size: 0.78rem;
+    margin-bottom: 4px;
+    opacity: 0.9;
+  }
+  
+  .counter-controls {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 8px;
+    border-radius: 999px;
+    background: #020617;
+    border: 1px solid #1f2937;
+  }
+  
+  .counter-btn {
+    border: none;
+    width: 26px;
+    height: 26px;
+    border-radius: 999px;
+    font-size: 16px;
+    line-height: 1;
+    cursor: pointer;
+    background: #111827;
+    color: #e5e7eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .counter-btn:hover {
+    background: #1f2937;
+  }
+  
+  .counter-value {
+    min-width: 22px;
+    text-align: center;
+    font-variant-numeric: tabular-nums;
+  }
+  
+  .card-footer {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.78rem;
+  }
+  
+  .card-footer .delete-btn {
+    border: none;
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    background: #7f1d1d;
+    color: #fee2e2;
+    cursor: pointer;
+  }
+  
+  .card-footer .delete-btn:hover {
+    background: #b91c1c;
+  }
+  

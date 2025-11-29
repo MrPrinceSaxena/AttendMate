@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Attendance Assistant</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Attendance Assistant</h1>
+
+    <form id="attendance-form">
+      <div class="field">
+        <label>Subject Name</label>
+        <input type="text" id="subject" required />
+      </div>
+
+      <div class="field">
+        <label>Total Classes (T)</label>
+        <input type="number" id="total" min="0" required />
+      </div>
+
+      <div class="field">
+        <label>Attended Classes (A)</label>
+        <input type="number" id="attended" min="0" required />
+      </div>
+
+      <div class="field">
+        <label>Required % (R)</label>
+        <input type="number" id="required" min="1" max="100" value="75" required />
+      </div>
+
+      <button type="submit">Calculate / Save</button>
+    </form>
+
+    <h2 style="margin-top:24px;">Your Subjects</h2>
+    <div id="subjects-list"></div>
+
+    <div id="result" class="card hidden">
+      <h2 id="subject-name"></h2>
+      <p><strong>Current Attendance:</strong> <span id="current"></span>%</p>
+      <p><strong>Can bunk:</strong> <span id="bunk"></span> classes</p>
+      <p><strong>Need to attend:</strong> <span id="need"></span> classes</p>
+      <p id="message"></p>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
